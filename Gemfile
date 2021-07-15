@@ -30,6 +30,7 @@ gem 'puma', '~> 3.0'
 
 #use devise for authentication
 gem 'devise'
+gem 'devise-jwt'
 
 #graphql graphiql
 gem "graphql", "~> 1.10"

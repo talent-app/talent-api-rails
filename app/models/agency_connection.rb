@@ -1,0 +1,2 @@
+class AgencyConnection < ApplicationRecord
+end

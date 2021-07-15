@@ -1,0 +1,2 @@
+class AgentProfile < ApplicationRecord
+end
