@@ -1,13 +1,11 @@
 module Types
-  class QueryType < Types::BaseObject
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
+  class QueryType < BaseObject
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
+    description "The query root of this schema is full of bs"
+    field :users, [UserType], :null => false
+
+    def users
+      User.all
     end
   end
 end

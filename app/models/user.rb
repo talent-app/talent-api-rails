@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  belongs_to :user_type
+  belongs_to :user_category
 
   has_one :agent
   has_one :performer
